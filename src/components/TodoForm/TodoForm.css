@@ -1,0 +1,58 @@
+.container {
+  background-color: black;
+  height: 90vh;
+  width: 45vw;
+  margin-top: 5vh;
+  padding: 30px;
+  border-radius: 5%;
+  color: white;
+  animation: slidein 1s ease;
+}
+.container>h1 {
+  animation: slide-in-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+  font-size: 50px;
+}
+.container-box h4 {
+  animation: slide-in-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+  opacity: 0.7;
+}
+.todo-container {
+  height: 64%;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.todo-container::-webkit-scrollbar {
+  width: 5px;
+}
+.todo-container::-webkit-scrollbar-thumb {
+  background-color: var(--white-color);
+  border-radius: 10px;
+}
+.todo-container::-webkit-scrollbar-track {
+  background-color: var(--main-color);
+  border-radius: 10px;
+}
+.empty-container {
+  display: flex;
+  justify-content: space-around;
+  opacity: 0.5;
+  height: 50vh;
+  font-size: 20px;
+  align-items: center;
+  animation: fade 7s ease;
+}
+
+@media screen and (max-width:700px) {
+  .container{
+    width: 75vw;
+  }
+}
+@media screen and (max-width:500px) {
+  .container>h1 {
+    font-size: 40px;
+  }
+  .container{
+    width: 90vw;
+  }
+}

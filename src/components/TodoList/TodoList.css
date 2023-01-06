@@ -1,0 +1,48 @@
+.todo-list{
+    margin-top: 3vh;
+    width: 100%;
+    color: white;
+}
+.todo-list .box{
+    animation: slide-in-top 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    margin: 0 auto;
+    width: 98%;
+    display: flex;
+    /* min-height: 100px; */
+    justify-content: space-between;
+    align-items:center;
+    color: white;
+    padding: 20px 15px;
+    background-color: var(--main-color);
+    border-radius: 10px;
+    font-weight: bold;
+}
+.todo-list .box p{
+    margin: 0;
+    width: 80%;
+    font-size: 17px;
+}
+.todo-list .box .icons{
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+.icons i{
+    font-size: 18px;
+    cursor: pointer;
+}
+.modal-content{
+    background-color: var(--main-color);
+}
+.modal-footer,.modal-header{
+    border: none;
+}
+.modal-body input{
+    background-color: grey;
+    color: white;
+    border: none;
+}
+.btn-white{
+    color: white;
+}

@@ -30,7 +30,10 @@ const TodoList = (props) => {
   return (
     <div className="todo-list">
       <div className="box">
+        <div className="para">
         <p>{props.text}</p>
+
+        </div>
         <div className="icons">
           <i
             className="fa-solid fa-pen-to-square"

@@ -6,7 +6,7 @@
   padding: 30px;
   border-radius: 5%;
   color: white;
-  animation: slidein 1s ease;
+  /* animation: slidein 1s ease; */
 }
 .container>h1 {
   animation: slide-in-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940);
@@ -17,6 +17,7 @@
   opacity: 0.7;
 }
 .todo-container {
+  margin-top: 1.5vh;
   height: 64%;
   width: 100%;
   overflow-x: hidden;
@@ -37,7 +38,7 @@
   display: flex;
   justify-content: space-around;
   opacity: 0.5;
-  height: 50vh;
+  height: 90%;
   font-size: 20px;
   align-items: center;
   animation: fade 7s ease;
@@ -46,6 +47,10 @@
 @media screen and (max-width:700px) {
   .container{
     width: 75vw;
+    height: 80vh;
+  }
+  .todo-container{
+    height: 57%;
   }
 }
 @media screen and (max-width:500px) {
@@ -54,5 +59,14 @@
   }
   .container{
     width: 90vw;
+  }
+}
+@media screen and (max-width:350px){
+  .container{
+    padding: 15px;
+    height: 75vh;
+  }
+  .todo-container{
+    height: 53%;
   }
 }

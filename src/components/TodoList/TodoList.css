@@ -52,3 +52,11 @@
 .btn-white{
     color: white;
 }
+@media screen and (max-width:400px)  {
+    .todo-list .box .para{
+        font-size: 16px;
+    }
+    .icons i{
+        font-size: 17px;
+    }
+}

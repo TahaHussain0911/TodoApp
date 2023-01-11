@@ -3,17 +3,18 @@ import todoContext from "./todoContext";
 const TodoState = (props) => {
   //main array for todos
   const [text, settext] = useState([]);
-  let r = /^\S.+/;
   //will contain and id and text of the innput field
   const [todo, settodo] = useState({});
   const [input, setinput] = useState("");
-
+  
   //Change input hook
   const [cinput, setcinput] = useState({});
-    const [inputValue, setinputValue] = useState('')
+  let r = /^\S.+/;
+
+  //add to todo function
   const handleClick = (e) => {
     e.preventDefault();
-    if (r.test(inputValue)) {
+    if (r.test(input)) {
       //add todo click will expand the todo object in the text array
       settext([...text, todo]);
       // console.log(text);
@@ -78,7 +79,7 @@ const TodoState = (props) => {
       alertFunc("change-class", "First Space not Allowed");
       e.preventDefault();
     }
-    setinputValue(e.target.value);
+    // setinputValue(e.target.value);
   };
   const [alert, setalert] = useState({});
   const alertFunc = (color, messsage) => {
